@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body {
+    margin: auto;
+    padding: 0;
+    max-width: 1200px;
+    font-weight: 400
+
+}
+
+h1 {
+    display: flex;
+    background-image: url("background-image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    height: 400px;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    font-size: 60px;
+    color: white;
+    padding-left: 44px;
+    font-weight: 600;
+}
+
+a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 11px;
+    border-radius: 15px;
+}
+
+#header-span{
+    padding-left: 550px;
+}
+.search-area {
+    position: relative;
+    top: -70px;
+    left: 50px;
+    display: flex;
+    width: 450px;
+    margin: auto;
+}
+
+input {
+    padding: 20px;
+    width: 450px;;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-left: 15px;
+
+}
+
+button {
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    background-color: white;
+}
+
+.poster {
+    width: 200px;
+    border-radius: 5px
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.movie-rating {
+    display: flex;
+    flex-direction: column;
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    margin: 0 0 7px 21px;
+}
+
+h4 {
+    margin: 2px 21px;
+    padding: 0;
+}
+
+/* possibly config for media query*/
+.movie {
+    display: flex;
+    max-width: 65vw;
+    max-height: 30vh;
+    margin: 0 44px;
+    padding: 22px 0;
+    border-bottom: 1px solid black
+}
+
+.movie-details {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+p, span {
+    margin: 15px 10px;
+}
+
+#details {
+    margin-left: 21px;
+}
+
+.watchlist-button {
+    width: 110px;
+    height: 42px;
+    text-align: center;
+    margin: 10px 65px;
+    padding: 10px 10px;
+    background: none;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.watchlist-button:hover {
+    border: 1px solid darkorange;
+    color: darkorange
+}
+
+a:hover {
+    font-size: 22px;
+    color: darkorange
+}
+
+
+#asm a{
+    color: darkorange;
+}
+
+
+@media(max-width: 500px){
+    h1 {
+        height: 200px;
+        font-size: 32px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 0 0 10px;
+    }
+
+    .search-area {
+        position: relative;
+        left: 100px;
+        top: -45px;
+        padding: 5px;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+        width: 150px;
+    }
+
+    #header-span {
+        padding-left: 30px;
+    }
+
+    button {
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .movie {
+        max-width: 40vw;
+        margin: 0 22px;
+    }
+
+    .poster {
+        width: 130px;
+        height: 200px;
+        margin: auto 0;
+    }
+
+    .plot {
+        max-width: 75%
+    }
+
+    h3 {
+        font-size: 0.875rem;
+        display: flex;
+        margin: auto 0 auto 11px
+    }
+
+    h4 {
+        margin: auto 5px;;
+        max-width: 100%;
+        font-size: 0.775rem;
+    }
+
+    .watchlist-button, p {
+        font-size: 0.75rem;
+    }
+
+    .watchlist-button {
+        width: 90px;
+        margin-left: 20px;
+        font-size: 0.75rem
+    }
+
+    .movie-rating {
+        max-width: 300px;
+    }
+
+    .ratings {
+        margin: auto 5px;
+    }
+}
+
+@media only screen 
+    and (width: 390px) 
+    and (height: 844px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+        h1 {
+            height: 200px;
+            font-size: 32px;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0 0 10px;
+        }
+    
+        .search-area {
+            position: relative;
+            left: 100px;
+            top: -45px;
+            padding: 5px;
+        }
+    
+        input {
+            padding: 10px;
+            border-radius: 10px;
+            width: 150px;
+        }
+    
+        #header-span {
+            padding-left: 30px;
+        }
+    
+        button {
+            padding: 5px;
+            border-radius: 10px;
+        }
+    
+        .movie {
+            max-width: 40vw;
+            margin: 0 22px;
+        }
+    
+        .poster {
+            width: 130px;
+            height: 200px;
+            margin: auto 0;
+        }
+    
+        .plot {
+            max-width: 75%
+        }
+    
+        h3 {
+            font-size: 0.875rem;
+            display: flex;
+            margin: auto 0 auto 11px
+        }
+    
+        h4 {
+            margin: auto 5px;;
+            max-width: 100%;
+            font-size: 0.775rem;
+        }
+    
+        .watchlist-button, p {
+            font-size: 0.75rem;
+        }
+    
+        .watchlist-button {
+            width: 90px;
+            margin-left: 20px;
+            font-size: 0.75rem
+        }
+    
+        .movie-rating {
+            max-width: 300px;
+        }
+    
+        .ratings {
+            margin: auto 5px;
+        }
+
+    }
